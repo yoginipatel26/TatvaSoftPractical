@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="10dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_toEndOf="@+id/cardImage"
+                android:layout_marginLeft="10dp"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/lyBadgeCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/cardImage"
+                android:layout_below="@+id/tvName"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGoldCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gold"
+                    android:layout_marginLeft="10dp"
+
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSilverCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silver"
+                    android:layout_toEndOf="@+id/tvGoldCount"
+                    android:layout_marginLeft="10dp"
+
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBronze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bronze"
+                    android:layout_toEndOf="@+id/tvSilverCount"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSave"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/star"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+</layout>
